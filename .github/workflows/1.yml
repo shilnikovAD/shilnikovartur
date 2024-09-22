@@ -1,0 +1,10 @@
+name: date
+
+on: [push, pull_request]
+
+jobs:
+  dateshow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dfghjkl
+        run : date
