@@ -1,10 +1,7 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "master", "feature/workflows" ]
-  pull_request:
-    branches: [ "master", "feature/workflows" ]
+  [push, pull_request]
 
 jobs:
   build:
