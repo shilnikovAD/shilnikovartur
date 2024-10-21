@@ -2,20 +2,14 @@ package org.example;
 
 import java.util.Iterator;
 
+/**
+ * A simple generic array implementation that supports adding, removing,
+ * and retrieving elements.
+ *
+ * <A> the type of elements in the array
+ */
+
 public class SimpleArray<A> implements Simple<A> {
-
-    public static void main(String[] args) {
-        Simple<String> strings = new SimpleArray<>();
-        strings.add("first");
-        strings.add("second");
-        strings.add("tree");
-
-        //strings.remove(1);
-
-        System.out.println(strings.get(1));
-        System.out.println(strings.size());
-    }
-
     private A[] values;
     public SimpleArray() {
         values = (A[]) new Object[0];
